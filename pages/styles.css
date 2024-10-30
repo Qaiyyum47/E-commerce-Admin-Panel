@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 80px;
     padding: 10px 20px;
 }
 
@@ -26,6 +26,7 @@ body {
     display: flex; /* Use flexbox for logo */
     align-items: center; /* Center items vertically */
     font-size: 16pt;
+    margin-right: 20px;
 }
 
 .logo img{
@@ -37,7 +38,7 @@ body {
 }
 
 .profile {
-    margin-left: 10px;
+    margin-left: 20px;
     display: flex;
     align-items: center;
 }
@@ -155,8 +156,6 @@ body {
 }
 
 .analytic-card {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
     width: 100%;
     height: 400px; /* Set a fixed height */
     background-color: #1C1C1E;
@@ -169,6 +168,13 @@ body {
     padding:10px;
 }
 
+
+.ana {
+    background-color: #2f2f30;
+    color: #FFB91B;
+    border-radius: 5px;
+    padding: 3px 11px 3px 11px;
+}
 
 .con-right {
     display: flex;
@@ -210,7 +216,6 @@ body {
     color: white;
     padding: 20px;
 }
-
 
 
 
