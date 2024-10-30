@@ -12,8 +12,8 @@ body {
 
 .dashboard-header {
     background-color: #1C1C1E;
-    font-size: 15pt;
-    font-weight: 700;
+    
+    font-weight: 500;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -25,6 +25,7 @@ body {
 .logo {
     display: flex; /* Use flexbox for logo */
     align-items: center; /* Center items vertically */
+    font-size: 16pt;
 }
 
 .logo img{
@@ -75,22 +76,141 @@ body {
     color: #6C757D; 
     text-decoration: none; 
     padding: 10px; 
-    display: block; 
+    display: flex; 
+    align-items: center;
+    gap: 1em;
+    
 }
 
 .dashboard-nav nav ul li a:hover {
     background-color: #202020; 
     color: #A280FF; 
+    border-radius: 10   px;
+}
+
+.dashboard-nav nav ul li a svg {
+    fill: currentColor;
+    flex-shrink: 0;
+}
+.dashboard-nav nav ul li hr{
+    margin-bottom: 10px;
+    color: #6C757D; 
+}
+.dashboard-nav nav ul li:nth-child(8) {
+    margin-top: 240px;
 }
 
 .dashboard-main {
-    flex-grow: 1;
+    
     padding: 20px;
     margin-left: 20px;
     background-color: #151515;
+    
 }
 
 .dashboard-main h1 {
     color: #fff;
     margin-bottom: 20px;
+
 }
+
+.container {
+    height: 100vh;
+    width: 1200px;
+    padding: 1em;
+    display: flex;
+    gap: 20px;
+   
+}
+.con-left {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.con-top {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.square {
+    width: calc(50% - 10px);
+    background-color: #1C1C1E;
+    height: 100px; /* Set a fixed height */
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.square h2 {
+    padding: 10px;
+}
+
+
+.con-bottom {
+    flex: 4;
+    margin-top: 20px;
+}
+
+.analytic-card {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    width: 100%;
+    height: 400px; /* Set a fixed height */
+    background-color: #1C1C1E;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.analytic-card h2{
+    padding:10px;
+}
+
+
+.con-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.con-top-right{
+    display: flex;
+    flex: 2;
+    
+}
+
+.square-top {
+    flex-direction: column; /* Stack content vertically */
+    width: 100%;
+    height: 95%; /* Set a fixed height */
+    background-color: #1C1C1E;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.con-bottom-right {
+   
+    display: flex;
+    flex: 4;
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+
+.square-bottom {
+    flex-direction: column; /* Stack content vertically */
+    width: 100%;
+    height: 400px; /* Set a fixed height */
+    background-color: #1C1C1E;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+
+
+
