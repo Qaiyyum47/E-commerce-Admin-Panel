@@ -12,7 +12,6 @@ body {
 
 .dashboard-header {
     background-color: #1C1C1E;
-    
     font-weight: 500;
     color: #fff;
     display: flex;
@@ -61,7 +60,9 @@ body {
     width: 250px;
     height: 100vh;
     padding: 20px;
-    
+    position: sticky;
+    top: 0;
+    align-self: start;
     
 }
 
@@ -106,13 +107,12 @@ body {
     padding: 20px;
     margin-left: 20px;
     background-color: #151515;
-    
 }
 
 .dashboard-main h1 {
     color: #fff;
-    margin-bottom: 20px;
-
+    margin-top: 10px;
+    margin-left: 15px;
 }
 
 .container {
@@ -121,8 +121,8 @@ body {
     padding: 1em;
     display: flex;
     gap: 20px;
-   
 }
+
 .con-left {
     display: flex;
     flex: 2;
@@ -171,7 +171,7 @@ body {
 
 .ana {
     background-color: #2f2f30;
-    color: #FFB91B;
+    color: #A280FF;
     border-radius: 5px;
     padding: 3px 11px 3px 11px;
 }
@@ -214,5 +214,44 @@ body {
     padding: 20px;
 }
 
+.table-container {
+    overflow-x: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 17px 15px 20px 15px;
+    width: 99%;
+    background-color: #1C1C1E;
+}
 
+table {
+    height: 60vh;
+    width: 1150px;
+    border-collapse: collapse;
+}
 
+thead {
+    background-color: #1C1C1E;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #CED4DA;
+}
+
+tbody tr:hover {
+    background-color: #202022;
+}
+
+img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 4px;
+}
+
+.price {
+    color: #A280FF;
+    font-weight: bold;
+}
