@@ -60,91 +60,86 @@
         </aside>
 
         <main class="dashboard-main" id="main-content">
-            <h1>Product</h1>
-            <div class="table-container">
+
+            <section class="container1">
+                <section class="table-top">
+                    <h1>Product</h1>
+                    <div class="input-group">
+                        <input type="search" placeholder="Search Product ">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                    </div>
+                </section>
+            <section class="table-container">
                 <table>
                     <thead>
                         <tr>
-                            <th>PRODUCT ID</th>
-                            <th>PRODUCT NAME</th>
-                            <th>DESCRIPTON</th>
+                            <th>NO</th>
+                            <th>PRODUCT</th>
                             <th>PRICE</th>
-                            <th>STOCK QUANTITY</th>
-                            <th>VENDOR</th>
+                            <th>STOCK</th>
                             <th>CATEGORY</th>
                             <th>IMAGE</th>
-                            <th>DATE ADDED</th>
                             <th>SKU</th>
+                            <th>EDIT</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
                             <td>Dell Inspiron Laptop</td>
-                            <td>High performance laptop for work and play.</td>
                             <td class="price">$799.99</td>
                             <td>50</td>
-                            <td>1</td>
-                            <td>1</td>
+                            <td>Laptop</td>
                             <td><img src="https://example.com/dell_inspiron.jpg" alt="Dell Inspiron Laptop"></td>
-                            <td>2024-10-3</td> 
                             <td>SKU001</td>
+                            <th><a class="edit-link" href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm0-240q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm0-240q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640ZM480-400q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm40 240v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T863-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"/></svg></a></th>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>HP Pavilion Desktop</td>
-                            <td>Desktop for gaming and productivity.</td>
                             <td class="price">$999.99</td>
                             <td>30</td>
-                            <td>2</td>
-                            <td>2</td>
+                            <td>Laptop</td>
                             <td><img src="https://example.com/hp_pavilion.jpg" alt="HP Pavilion Desktop"></td>
-                            <td>2024-10-3</td> 
                             <td>SKU002</td>
+                            <th><a class="edit-link" href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm0-240q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm0-240q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640ZM480-400q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm40 240v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T863-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"/></svg></a></th>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>Logitech Wireless Mouse</td>
-                            <td>Ergonomic wireless mouse.</td>
                             <td class="price">$29.99</td>
                             <td>200</td>
-                            <td>3</td>
-                            <td>3</td>
+                            <td>Accesories</td>
                             <td><img src="https://example.com/logitech_mouse.jpg" alt="Logitech Wireless Mouse"></td>
-                            <td>2024-10-3</td> 
                             <td>SKU003</td>
+                            <th><a class="edit-link" href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm0-240q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm0-240q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640ZM480-400q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm40 240v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T863-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"/></svg></a></th>
                         </tr>
                         <tr>
                             <td>4</td>
                             <td>Asus Gaming Laptop</td>
-                            <td>Powerful gaming laptop.</td>
                             <td class="price">$1199.99</td>
                             <td>40</td>
-                            <td>4</td>
-                            <td>1</td>
+                            <td>Laptop</td>
                             <td><img src="https://example.com/asus_gaming.jpg" alt="Asus Gaming Laptop"></td>
-                            <td>2024-10-3</td> 
                             <td>SKU004</td>
+                            <th><a class="edit-link" href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm0-240q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm0-240q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640ZM480-400q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm40 240v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T863-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"/></svg></a></th>
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td>HP Omen Gaming PC</td>
-                            <td>High-end gaming desktop.</td>
+                            <td>AULAF75 Mechanical Keyboard</td>
                             <td class="price">$1599.99</td>
                             <td>20</td>
-                            <td>2</td>
-                            <td>2</td>
+                            <td>Accesories</td>
                             <td><img src="https://example.com/hp_omen.jpg" alt="HP Omen Gaming PC"></td>
-                            <td>2024-10-3</td> 
                             <td>SKU005</td>
+                            <th><a class="edit-link" href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm0-240q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm0-240q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640ZM480-400q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm40 240v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T863-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"/></svg></a></th>
+
                         </tr>
                     </tbody>
                 </table>
-            </div>
-            
-            
-            
-            
+            </section>
+
+            </section>
         </main>
     </div>
 
